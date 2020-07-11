@@ -184,10 +184,38 @@ class Subjuntivo(Auxiliar):
     #     pass
 
 
-# class Imperativo(Auxiliar):
-#     def afirmativo():
-#         pass
-#     def negativo():
-#         pass
-#     def infinitivo():
-#         pass
+class Imperativo(Auxiliar):
+    def afirmativo(self):
+        irregulares = {}
+        if self.sufixo == "ar":
+            sufixos = []
+
+        if self.sufixo == "er":
+            sufixos = []
+
+        if self.sufixo == "ir":
+            sufixos = []
+
+    def negativo():
+        irregulares = {}
+
+        if self.sufixo == "ar":
+            sufixos = []
+
+        if self.sufixo == "er":
+            sufixos = []
+
+        if self.sufixo == "ir":
+            sufixos = []
+
+    def infinitivo():
+        irregulares = {}
+
+        if self.sufixo == "ar":
+            sufixos = []
+
+        if self.sufixo == "er":
+            sufixos = []
+
+        if self.sufixo == "ir":
+            sufixos = []
