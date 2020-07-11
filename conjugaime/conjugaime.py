@@ -237,9 +237,11 @@ class Imperativo(Auxiliar):
         super().__init__(verbo)
 
         # self.sufixo = verbo[-3:]
-        self.pessoas = ["Não existe", "tu", "ele/você", "nós", "vós", "vocês/eu"]
+        # self.pessoas = ["Não existe", "tu", "ele/você", "nós", "vós", "vocês/eu"]
 
     def afirmativo(self):
+        self.pessoas = ["Não existe", "tu", "ele/você", "nós", "vós", "vocês/eu"]
+
         irregulares = {}
         if self.sufixo == "ar":
             sufixos = ["Não existe", "es", "e", "emos", "eis", "em"]
@@ -251,7 +253,7 @@ class Imperativo(Auxiliar):
             sufixos = ["Não existe", "e", "a", "amos", "i", "am"]
         return self.resposta(irregulares, sufixos)
 
-    # def negativo():
+    # def negativo(self):
     #     irregulares = {}
 
     #     if self.sufixo == "ar":
