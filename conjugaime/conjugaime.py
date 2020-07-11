@@ -157,6 +157,11 @@ class Subjuntivo(Auxiliar):
         super().__init__(verbo)
 
         self.sufixo = verbo[-2:]
+
+    def presente(self):  # que eu xurugue
+        self.radical = self.verbo[:-2]
+        irregulares = {}
+
         self.pessoas = [
             "que eu",
             "que tu",
@@ -165,10 +170,6 @@ class Subjuntivo(Auxiliar):
             "que vós",
             "que elas/eles",
         ]
-
-    def presente(self):  # que eu xurugue
-        self.radical = self.verbo[:-2]
-        irregulares = {}
 
         if self.sufixo == "ar":
             if self.radical[-1] == "g" or self.radical[-1] == "q":
@@ -187,6 +188,15 @@ class Subjuntivo(Auxiliar):
     def preterito_imperfeito(self):  # se eu xurugasse
         irregulares = {}
 
+        self.pessoas = [
+            "se eu",
+            "se tu",
+            "se ela/ele",
+            "se nós",
+            "se vós",
+            "se elas/eles",
+        ]
+
         if self.sufixo == "ar":
             sufixos = ["asse", "asses", "asse", "ássemos", "ásseis", "assem"]
 
@@ -200,6 +210,15 @@ class Subjuntivo(Auxiliar):
 
     def futuro(self):  # quando eu xurugar
         irregulares = {}
+
+        self.pessoas = [
+            "quando eu",
+            "quando tu",
+            "quando ela/ele",
+            "quando nós",
+            "quando vós",
+            "quando elas/eles",
+        ]
 
         if self.sufixo == "ar":
             sufixos = ["ar", "ares", "ar", "armos", "ardes", "arem"]
