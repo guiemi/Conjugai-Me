@@ -8,10 +8,10 @@ Este projeto é um fork do [conjugai-me](https://github.com/dunossauro/conjugai-
   - Verbos regulares (DONE!)
   - Verbos irregulares (TODO)
 - Modo Conjuntivo/Subjuntivo
-  - **Verbos regulares (DOING)**
+  - Verbos regulares (DONE)
   - Verbos irregulares (TODO)
 - Modo Imperativo
-  - Verbos regulares (TODO)
+  - **Verbos regulares (DOING)**
   - Verbos irregulares (TODO)
 - Indicativo
 - Conjuntivo
@@ -45,9 +45,11 @@ firefox htmlcov/index.html
 
 #### Checklist/Roadmap
 - [x] Verbo "xurugar" veio sem o "u" em "xurug**u**ei" (1ª pess. do pret. perf. do ind.). Consertar
-- [ ] Consertar o tamanho do slice dos radicais na classe `Subjuntivo()`
+- [x] Consertar o tamanho do slice dos radicais na classe `Subjuntivo()`
 - [ ] Escrever testes para outras pessoas do verbo além da 1ª
 - [ ] Escrever testes para verbos com radicais terminados em `-g`, como "xurugar"
+- [ ] Mostrar corretamente as pessoas do subjuntivo
+- [ ] Mostrar corretamente as pessoas do imperativo
 
 
 
