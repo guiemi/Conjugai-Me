@@ -214,37 +214,44 @@ class Subjuntivo(Auxiliar):
 
 
 class Imperativo(Auxiliar):
+    def __init__(self, verbo):
+        super().__init__(verbo)
+
+        # self.sufixo = verbo[-3:]
+        self.pessoas = ["Não existe", "tu", "ele/você", "nós", "vós", "vocês/eu"]
+
     def afirmativo(self):
         irregulares = {}
         if self.sufixo == "ar":
-            sufixos = []
+            sufixos = ["Não existe", "es", "e", "emos", "eis", "em"]
 
         if self.sufixo == "er":
-            sufixos = []
+            sufixos = ["Não existe", "e", "a", "amos", "ei", "am"]
 
         if self.sufixo == "ir":
-            sufixos = []
+            sufixos = ["Não existe", "e", "a", "amos", "i", "am"]
+        return self.resposta(irregulares, sufixos)
 
-    def negativo():
-        irregulares = {}
+    # def negativo():
+    #     irregulares = {}
 
-        if self.sufixo == "ar":
-            sufixos = []
+    #     if self.sufixo == "ar":
+    #         sufixos = []
 
-        if self.sufixo == "er":
-            sufixos = []
+    #     if self.sufixo == "er":
+    #         sufixos = []
 
-        if self.sufixo == "ir":
-            sufixos = []
+    #     if self.sufixo == "ir":
+    #         sufixos = []
 
-    def infinitivo():
-        irregulares = {}
+    # def infinitivo():
+    #     irregulares = {}
 
-        if self.sufixo == "ar":
-            sufixos = []
+    #     if self.sufixo == "ar":
+    #         sufixos = []
 
-        if self.sufixo == "er":
-            sufixos = []
+    #     if self.sufixo == "er":
+    #         sufixos = []
 
-        if self.sufixo == "ir":
-            sufixos = []
+    #     if self.sufixo == "ir":
+    #         sufixos = []
